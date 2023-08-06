@@ -48,5 +48,5 @@ setInterval(() => {
     return;
   }
   postLog(window.logQueue.all
-    .filter(item => window.logQueue.sent.indexOf(item[1]) === -1).slice());
+    .filter(item => window.logQueue.sent.indexOf(item[1]) === -1).slice(), '/log');
 }, 1000);
