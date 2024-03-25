@@ -45,6 +45,7 @@ function postLog(data, url) {
 
 setInterval(() => {
   if (!window.logQueue.all.length) {
+    window.logQueue.sent = [];
     return;
   }
   postLog(window.logQueue.all
